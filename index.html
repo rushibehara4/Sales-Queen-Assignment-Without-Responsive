@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div
+        class="card-container d-flex flex-column justify-content-center align-center"
+      >
+        <div class="container">
+          <div class="row">
+            <div
+              class="header-container d-flex flex-row justify-content-between align-center"
+            >
+              <div class="logo-container d-flex flex-row p-2 mt-2">
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/7e/f3/fe7ef312-23ca-5ec2-f9bb-850edf25a2d7/AppIcon-0-1x_U007emarketing-0-10-0-sRGB-85-220.png/434x0w.webp"
+                  alt="logo-image"
+                  class="logo-image"
+                  height="50"
+                  width="50"
+                />
+                <h1 class="header-logo-heading ms-2">Oliva<br />Miller</h1>
+              </div>
+              <hr class="switch-vertical-line m-0" />
+              <div
+                class="search-container d-flex flex-row justify-content-center align-center p-2 mt-3"
+              >
+                <i class="bi bi-search search-icon ms-2 mt-1"></i>
+                <input
+                  type="search"
+                  placeholder="Search Dashboard"
+                  class="search-bar ps-2"
+                />
+              </div>
+              <div
+                class="switch-company-container d-flex flex-row align-center mt-3"
+              >
+                <h1 class="switch-company-heading p-3">Switch Company</h1>
+                <hr class="switch-vertical-line m-0" />
+                <select
+                  name="company-switch"
+                  id="companySwitch"
+                  class="company-switch-list-container p-2 mt-1"
+                >
+                  <option value="Oliver Miller">Oliva Miller</option>
+                  <option value="Henry Parker">Henry Parker</option>
+                  <option value="Daniel Sullivan">Daniel Sullivan</option>
+                  <option value="Ethan Carter">Ethan Carter</option>
+                </select>
+                <i class="bi bi-chevron-down custom-button p-2"></i>
+              </div>
+              <hr class="switch-vertical-line m-0" />
+              <div
+                class="profile-continaer d-flex flex-row justify-content-center align-center mt-3"
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROY6iasJSWW0mWpFuA1AGnKpdb68PfXfWMg&usqp=CAU"
+                  alt="profile-image"
+                  class="profile-image me-3"
+                  height="50"
+                  width="55"
+                />
+                <div class="name-container p-2 me-3">
+                  <p class="welcome-back-text p-0 m-0">Welcome Back</p>
+                  <p class="profile-name">Yossil</p>
+                </div>
+                <button class="profile-arrow-button-container p-1 mb-2">
+                  <i class="bi bi-chevron-down"></i>
+                </button>
+              </div>
+            </div>
+            <hr class="horizontal-line m-0 p-0" />
+            <div class="col-12 body-container d-flex flex-column align-center">
+              <div class="col-12 body-list-container d-flex flex-row justify-content-start align-center mt-3 mb-3">
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-speedometer list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Dashboard</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-arrow-down-circle list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Receivables</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-arrow-left-circle list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Returns</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-person-fill list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Customers</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-credit-card-fill list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Payable</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-currency-dollar list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Sales</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-list list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Inventory</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-arrow-down list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Imports</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-tag list-icon"></i>
+                  </div>
+                  <p class="list-item-name">
+                    Cutting<br />
+                    Tickets
+                  </p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-arrows-angle-contract list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">EDI</p>
+                </div>
+                <div
+                  class="list-item-container d-flex flex-row justify-content-center align-center p-2"
+                >
+                  <div class="list-icon-container pt-2 me-1">
+                    <i class="bi bi-geo-alt list-icon"></i>
+                  </div>
+                  <p class="list-item-name mt-1">Showroom</p>
+                </div>
+              </div>
+              <div class="col-12 body-card-container d-flex flex-row mb-3">
+                <div class="col-3 reports-list-container">
+                  <div
+                    class="reports-heading-container d-flex justify-content-start align-center"
+                  >
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9vcoPSBLaK3sk0f3td_KI6ItJ3V-TeTtTcw&usqp=CAU"
+                      alt="reports-logo"
+                      class="reports-logo ms-2 mt-2"
+                      height="40"
+                      width="40"
+                    />
+                    <h1 class="reports-heading ms-2 mt-2">Reports</h1>
+                  </div>
+                  <div class="report-list-container p-2 mt-2">
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">Company Snapshot</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">Open Order Report</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">Cut & Sold Lookup</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">inventory Snapshot</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-list-ul report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">
+                        Balance to Sell Sales Summary
+                      </h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">Open Order To Pick</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">
+                        Period Compariosn Report
+                      </h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">SR Availablity</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">
+                        Slaes Forecast Report
+                      </h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">
+                        Detailed Period Compariosn Report
+                      </h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">style cost Report</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">
+                        Shipping / Reciveing Log
+                      </h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">Reciveing Summary</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">
+                        Style Availablity By Date
+                      </h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">
+                        Purchase Order Report
+                      </h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">Shipping Report</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">Traffic Report</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">
+                        Image Cut & Sold Report
+                      </h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                    <div
+                      class="report-list-items d-flex flex-row justify-content-between align-center p-2"
+                    >
+                      <h1 class="report-list-name mt-1">Style Sheets</h1>
+                      <button class="report-list-button mb-2 mt-1">
+                        <i class="bi bi-chevron-right report-right-arrow"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 calculation-list-container">
+                  <div
+                    class="col-12 d-flex flex-row calculation-boxes-container"
+                  >
+                    <div
+                      class="col-3 d-flex flex-row align-center bg-white m-2 calculation-box ps-2 pe-2 pt-2 pb-2"
+                    >
+                      <div
+                        class="dollar-icon-container d-flex flex-column justify-content-center align-center p-2 mt-2 me-2"
+                      >
+                        <i class="bi bi-currency-dollar dollar-icon"></i>
+                      </div>
+                      <div class="calculation-content mt-2">
+                        <h1 class="calculation-content-heading">$32,305.00</h1>
+                        <p class="calculation-content-para">Total Revenue</p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-3 d-flex flex-row align-center bg-white m-2 calculation-box ps-2 pe-2 pt-2 pb-2"
+                    >
+                      <div
+                        class="arrow-icon-container d-flex flex-column justify-content-center align-center p-2 mt-2 me-2"
+                      >
+                        <i class="bi bi-arrow-up-right arrow-right"></i>
+                      </div>
+                      <div class="calculation-content mt-2">
+                        <h1 class="calculation-content-heading">$6000</h1>
+                        <p class="calculation-content-para">Total Expenses</p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-3 d-flex flex-row align-center bg-white m-2 calculation-box ps-2 pe-2 pt-2 pb-2"
+                    >
+                      <div
+                        class="receivable-icon-container d-flex flex-row justify-content-center align-end p-2 mt-2 me-2"
+                      >
+                        <i class="bi bi-person-vcard account-receivable"></i>
+                        <i class="bi bi-arrow-down-left receive-down-arrow"></i>
+                      </div>
+                      <div class="calculation-content mt-2">
+                        <h1 class="calculation-content-heading">$56,304.00</h1>
+                        <p class="calculation-content-para">
+                          Account Receivables
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-3 d-flex flex-row align-center bg-white m-2 calculation-box ps-2 pe-2 pt-2 pb-2"
+                    >
+                      <div
+                        class="payable-icon-container d-flex flex-row justify-content-center align-start p-2 mt-2 me-2"
+                      >
+                        <i class="bi bi-person-vcard account-payble"></i>
+                        <i class="bi bi-arrow-up-right pay-up-arrow"></i>
+                      </div>
+                      <div class="calculation-content mt-2">
+                        <h1 class="calculation-content-heading">$67,083.00</h1>
+                        <p class="calculation-content-para account-payable">
+                          Account Payable
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 d-flex flex-row calculation-boxes-container"
+                  >
+                    <div
+                      class="col-3 d-flex flex-row align-center bg-white m-2 calculation-box ps-2 pe-2 pt-2 pb-2"
+                    >
+                      <div
+                        class="gallery-icon-container d-flex flex-column justify-content-center align-center p-2 mt-2 me-2"
+                      >
+                        <i class="bi bi-image gallery-icon"></i>
+                      </div>
+                      <div class="calculation-content mt-2">
+                        <h1 class="calculation-content-heading">3478</h1>
+                        <p class="calculation-content-para">
+                          Items missing images
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-3 d-flex flex-row align-center bg-white m-2 calculation-box ps-2 pe-2 pt-2 pb-2"
+                    >
+                      <div
+                        class="dollar-missing-icon-container d-flex flex-row justify-content-center align-end p-2 mt-2 me-2"
+                      >
+                        <i
+                          class="bi bi-currency-dollar dollar-missing-icon"
+                        ></i>
+                        <i class="bi bi-x-lg cross-icon"></i>
+                      </div>
+                      <div class="calculation-content mt-2">
+                        <h1 class="calculation-content-heading">237</h1>
+                        <p class="calculation-content-para">
+                          Items missing FOB cost
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-3 d-flex flex-row align-center bg-white m-2 calculation-box ps-2 pe-2 pt-2 pb-2"
+                    >
+                      <div
+                        class="dollar-change-icon-container d-flex flex-row justify-content-center align-end p-2 mt-2 me-2"
+                      >
+                        <i class="bi bi-currency-dollar dollar-change-icon"></i>
+                        <i class="bi bi-arrows-angle-contract change-icon"></i>
+                      </div>
+                      <div class="calculation-content mt-2">
+                        <h1 class="calculation-content-heading">160</h1>
+                        <p class="calculation-content-para">
+                          PO Items missing costs
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="col-3 d-flex flex-row align-center bg-white m-2 calculation-box ps-2 pe-2 pt-2 pb-2"
+                    >
+                      <div
+                        class="booked-icon-container d-flex flex-column justify-content-center align-center p-2 mt-2 me-2"
+                      >
+                        <i class="bi bi-clipboard2-check booked-icon"></i>
+                      </div>
+                      <div class="calculation-content mt-2">
+                        <h1 class="calculation-content-heading">0/$0.00</h1>
+                        <p class="calculation-content-para">Booked</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex grphs-container m-2">
+                    <div class="col-6 invoice-container bg-white me-2 p-2">
+                      <div
+                        class="invoice-heading-container d-flex flex-row justify-content-between align-center mb-3"
+                      >
+                        <h1 class="invoice-heading">Invoices</h1>
+                        <div class="invoice-dates-continaer">
+                          <label class="invoice-label-element"
+                            >Invoice from</label
+                          >
+                          <select
+                            class="invoice-dropdown-list"
+                            name="invoice-date"
+                            id="invoiceDates"
+                          >
+                            <option>01-23-22 -- 02-05-22</option>
+                            <option>03-25-22 -- 17-10-22</option>
+                            <option>18-10-22 -- 28-01-23</option>
+                            <option>29-23-22 -- 10-02-22</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div
+                        class="invoice-graph-details-container d-flex flex-row justify-content-start p-2 mb-3"
+                      >
+                        <div
+                          class="graph-details d-flex flex-row justify-content-start align-start me-2"
+                        >
+                          <div class="this-week-color me-1"></div>
+                          <p class="invoice-graph-details-para">This Week</p>
+                        </div>
+                        <div
+                          class="graph-details d-flex flex-row justify-content-start align-start me-2"
+                        >
+                          <div class="last-week-color me-1"></div>
+                          <p class="invoice-graph-details-para">Last Week</p>
+                        </div>
+                      </div>
+                      <div
+                        class="invoice-graph-container d-flex flex-row justify-content-center align-center"
+                      >
+                        <img src="https://digimarketmoz.com/wp-content/uploads/2019/07/progress1.jpg" class="graph-image" alt="graph-image" height="330" width="400"  />
+                      </div>
+                    </div>
+                    <div class="col-6 slaes-container bg-white ms-2 p-2">
+                      <div
+                        class="slaes-heading-container d-flex flex-row justify-content-between align-start mb-3"
+                      >
+                        <h1 class="sales-heading">Sales Forecast</h1>
+                        <div
+                          class="checkbox-list-continaer d-flex flex-row justify-content-start align-center"
+                        >
+                          <div
+                            class="d-flex flex-row justify-content-center align-center me-1"
+                          >
+                            <input
+                              type="checkbox"
+                              id="checkbox-1"
+                              class="checkbox-input me-1"
+                            />
+                            <label
+                              class="sales-label-element mt-1"
+                              for="checkbox-1"
+                              >Daily</label
+                            >
+                          </div>
+                          <div
+                            class="d-flex flex-row justify-content-center align-center me-1"
+                          >
+                            <input
+                              type="checkbox"
+                              id="checkbox-2"
+                              class="checkbox-input me-1"
+                            />
+                            <label
+                              class="sales-label-element mt-1"
+                              for="checkbox-2"
+                              >Weekly</label
+                            >
+                          </div>
+                          <div
+                            class="d-flex flex-row justify-content-center align-center me-1"
+                          >
+                            <input
+                              type="checkbox"
+                              id="checkbox-3"
+                              class="checkbox-input me-1"
+                            />
+                            <label
+                              class="sales-label-element mt-1"
+                              for="checkbox-3"
+                              >Monthly</label
+                            >
+                          </div>
+                          <div
+                            class="d-flex flex-row justify-content-center align-center me-1"
+                          >
+                            <input
+                              type="checkbox"
+                              id="checkbox-4"
+                              class="checkbox-input me-1"
+                            />
+                            <label
+                              class="sales-label-element mt-1"
+                              for="checkbox-4"
+                              >Quaterly</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="sales-graph-details-container d-flex flex-row justify-content-between align-center mb-3"
+                      >
+                        <div class="d-flex flex-row">
+                          <div
+                            class="sales-details d-flex flex-row justify-content-start align-start me-2"
+                          >
+                            <div class="weighted-color me-1"></div>
+                            <p class="invoice-graph-details-para">Weighted</p>
+                          </div>
+                          <div
+                            class="sales-details d-flex flex-row justify-content-start align-start me-2"
+                          >
+                            <div class="won-color me-1"></div>
+                            <p class="invoice-graph-details-para">Won</p>
+                          </div>
+                        </div>
+                        <div class="from-dates-container">
+                          <label class="sales-from-label-element">From</label>
+                          <select
+                            class="invoice-dropdown-list"
+                            name="invoice-date"
+                            id="invoiceDates"
+                          >
+                            <option>01-23-22 -- 02-05-22</option>
+                            <option>03-25-22 -- 17-10-22</option>
+                            <option>18-10-22 -- 28-01-23</option>
+                            <option>29-23-22 -- 10-02-22</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div
+                        class="sales-graph-container d-flex flex-row justify-content-center align-center"
+                      >
+                      <img src="https://digitalspherestudio.com/wp-content/uploads/2023/07/Social-Media-Maximize-Image-1.webp" class="graph-image" alt="graph-image" height="330" width="400"  />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 loading-container d-flex flex-row justify-content-center align-center bg-white mt-3 p-5 ms-2 me-4 mb-3"
+                  >
+                    <div class="spinner-border me-3" role="status"></div>
+                    <p>Loading....</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
